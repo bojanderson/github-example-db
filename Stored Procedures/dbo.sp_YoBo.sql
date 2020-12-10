@@ -7,7 +7,7 @@ GO
 -- Create date: <Create Date,,>
 -- Description:	<Description,,>
 -- =============================================
-CREATE PROCEDURE [dbo].[spYoBo]
+CREATE PROCEDURE [dbo].[sp_YoBo]
 AS
 BEGIN
 	-- SET NOCOUNT ON added to prevent extra result sets from
