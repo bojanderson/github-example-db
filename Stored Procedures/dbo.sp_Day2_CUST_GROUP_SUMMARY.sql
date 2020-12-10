@@ -1,0 +1,25 @@
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS ON
+GO
+
+
+
+
+
+CREATE PROCEDURE [dbo].[sp_Day2_CUST_GROUP_SUMMARY]
+	@WorkingArea VARCHAR(35)
+AS
+BEGIN
+	-- SET NOCOUNT ON added to prevent extra result sets from interfering with SELECT statements.
+	SET NOCOUNT ON;
+
+    SELECT	[WORKING_AREA]
+		,	[GRADE]
+		,	[CUST_COUNT]
+		,	[OUTSTANDING_AMOUNT]
+	FROM [dbo].[vw_CUST_GROUP_SUMMARY]
+	WHERE	[WORKING_AREA] = @WorkingArea
+
+END
+GO

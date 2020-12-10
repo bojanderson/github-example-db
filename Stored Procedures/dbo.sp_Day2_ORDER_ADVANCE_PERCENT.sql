@@ -1,0 +1,28 @@
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS ON
+GO
+
+
+
+
+
+
+
+
+CREATE PROCEDURE [dbo].[sp_Day2_ORDER_ADVANCE_PERCENT]
+	@OrdNum VARCHAR(6)
+AS
+BEGIN
+	-- SET NOCOUNT ON added to prevent extra result sets from interfering with SELECT statements.
+	SET NOCOUNT ON;
+
+	SELECT	[ORD_NUM]
+		,	[ORD_AMOUNT]
+		,	[ADVANCE_AMOUNT]
+		,	[ADV_PERCENT]
+	FROM	[dbo].[vw_ORDER_ADVANCE_PERCENT]
+	WHERE	ORD_NUM = @OrdNum
+
+END
+GO
