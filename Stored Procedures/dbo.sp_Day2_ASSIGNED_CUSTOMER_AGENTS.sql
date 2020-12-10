@@ -3,9 +3,6 @@ GO
 SET ANSI_NULLS ON
 GO
 
-
-
-
 CREATE PROCEDURE [dbo].[sp_Day2_ASSIGNED_CUSTOMER_AGENTS] 
 	@AgentCode CHAR(6)
 AS
@@ -17,7 +14,7 @@ BEGIN
 		,	[CUST_NAME]
 		,	[AGENT_CODE]
 		,	[AGENT_NAME]
-		,	[NewColumn]
+		,	[GRADE]
 	FROM [dbo].[vw_ASSIGNED_CUSTOMER_AGENTS]
 	WHERE	[AGENT_CODE] = @AgentCode
 
