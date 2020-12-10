@@ -4,6 +4,7 @@ SET ANSI_NULLS ON
 GO
 
 
+-- Mike's comment 
 
 CREATE VIEW [dbo].[vw_ORDER_ADVANCE_PERCENT] AS 
 
