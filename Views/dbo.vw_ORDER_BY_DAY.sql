@@ -3,8 +3,6 @@ GO
 SET ANSI_NULLS ON
 GO
 
-
-
 CREATE VIEW [dbo].[vw_ORDER_BY_DAY]
 AS
 
@@ -15,6 +13,4 @@ AS
     FROM
     	dbo.ORDERS
     GROUP BY ORD_DATE
-
-
 GO
