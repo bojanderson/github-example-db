@@ -13,6 +13,7 @@ BEGIN
 	SELECT	[ORD_DATE]
 		,	[ORD_COUNT]
 		,	[myChange]
+		,   [myHobby]
 	FROM	[dbo].[vw_ORDER_BY_DAY]
 	WHERE	ORD_DATE = @OrdDate
 
