@@ -17,6 +17,7 @@ BEGIN
 		,	[GRADE]
 	FROM [dbo].[vw_ASSIGNED_CUSTOMER_AGENTS]
 	WHERE	[AGENT_CODE] = @AgentCode
+	 AND 1 = 1
 
 END
 GO
