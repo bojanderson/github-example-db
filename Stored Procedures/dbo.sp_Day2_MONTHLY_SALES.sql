@@ -19,6 +19,7 @@ BEGIN
     SELECT	[OrderYear]
 		,	[OrderMonth]
 		,	[OrderAmount]
+		,	'makingchangeshb'
   FROM [GitHub_Example].[dbo].[vw_MONTHLY_SALES]
   WHERE	OrderYear = @OrderYear
 
