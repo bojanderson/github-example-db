@@ -18,6 +18,7 @@ BEGIN
     SELECT	[CUST_CODE]
 		,	[CUST_NAME]
 		,	[OUTSTANDING_AMT]
+      ,		Grade
 	FROM	[dbo].[vw_CUST_WITH_OUTSTANDING]
 	WHERE	@CustCode = @CustCode
 
