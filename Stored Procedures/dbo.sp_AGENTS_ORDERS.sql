@@ -12,7 +12,7 @@ BEGIN
 	-- SET NOCOUNT ON added to prevent extra result sets from interfering with SELECT statements.
 	SET NOCOUNT ON;
 
-    SELECT	*
+    SELECT	*, 'Test' as ExtraColumn
 	FROM		dbo.ORDERS	ORD
 	INNER JOIN	dbo.AGENTS	AGT	ON ORD.AGENT_CODE = AGT.AGENT_CODE
 	WHERE	AGT.AGENT_CODE = @AgentCode
